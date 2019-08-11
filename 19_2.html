@@ -1,0 +1,28 @@
+<html>
+<head><title>AYUSHI DHINGRA 1710991172</title></head>
+<body>
+<button onclick="my_fun()">clickme</button>
+<p id="result"></p>
+<script>
+function my_fun()
+{
+var flag=0,i=2,n=2;
+while(n<=100)
+{
+for(i=2;i<=(n/2);i++)
+{
+if(n%i==0)
+{
+flag++;
+break;
+}}
+if(flag==0)
+{
+document.getElementById("result").innerHTML+=n+" <br> ";
+}
+flag=0;
+n++;
+}}
+</script>
+</body>
+</html>
