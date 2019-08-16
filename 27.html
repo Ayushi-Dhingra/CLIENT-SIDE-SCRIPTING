@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>AYUSHI DHINGRA 1710991172</title>
+
+<script type="text/javascript">
+function myfunc()
+{
+var x=document.forms["myform"]["fname"].value;
+if(x=="")
+{
+alert("name cant be an empty field");
+return false;
+}
+}
+</script>
+</head>
+<body>
+<form name="myform" onsubmit="return myfunc()" action="https://www.google.com" method="get">
+name: <input type="text" name="fname"/>
+<input type="submit" value="submit"/>
+</form>
+</body>
+</html>
+
+<html>
+<head>
+<script>
+  function myfun()
+  {
+    var x = document.forms["myform"]["age"].value;
+    if(isNaN(x)||x<1||x>10)
+    {
+      alert("invalid age");
+      return false;
+      }
+    else
+    {
+      alert("valid age");
+      return true;
+    }
+  }
+</script>
+</head>
+<body>
+<form name = "myform" action = "www.google.co.in" onsubmit="return myfun()" method="get">
+    Name:<input type="text" name = "age">
+<input type = "submit" value = "submit">
+</form>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<html><head><title>AYUSHI DHINGRA 1710991172</title></head>
+<body>
+<p>Number of URLs in history list:</p>
+<p id="demo"></p>
+<button onclick="goBack()">Go Back</button>
+<p>Notice that clicking on the Back button here will not result in any action, because there is no previous URL in the history list.</p>
+<button onclick="goForward()">Go Forward</button>
+<p>Notice that clicking on the Forward button here will not result in any action, because there is no next URL in the history list.</p>
+<button onclick="goBack()">Go 2 pages back</button>
+<p>Notice that clicking on the "Go 2 pages back" button here will not result in any action, because there is no previous URL in the history list.</p>
+<script>
+var x = history.length;
+document.getElementById("demo").innerHTML = x;
+function goBack()
+{ window.history.back(); }
+function goForward() 
+{ window.history.forward(); }
+function goBack() 
+{ window.history.go(-2); }
+</script>
+</body>
+</html>
